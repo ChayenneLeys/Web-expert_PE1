@@ -1,0 +1,76 @@
+@use 'base' as *;
+
+.main-item {
+  @include flex-between();
+  width: 80%;
+  margin: 5rem auto;
+
+  .item-picture {
+    width: 40%;
+
+    img {
+      width: 90%;
+      height: fit-content;
+      margin: 0 auto;
+    }
+  }
+
+  .item-info {
+    width: 60%;
+
+    h1 {
+      font-family: $titels;
+      color: $primary-color;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .toevoegen {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      margin-top: 5rem;
+
+      input {
+        height: min-content;
+        margin-right: 1rem;
+      }
+
+      button {
+        font-size: 20pt;
+        color: $secondary-color;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 2rem;
+          width: fit-content;
+        }
+      }
+
+      .button-winkelmand-text {
+        font-size: 11pt;
+        color: $secondary-color;
+        margin-left: 1rem;
+      }
+    }
+
+    .meer-info {
+      margin-top: 2rem;
+      width: 30%;
+
+      img {
+        height: 1rem;
+        width: fit-content;
+        margin-right: 1rem;
+      }
+    }
+
+
+  }
+}

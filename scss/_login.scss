@@ -1,0 +1,32 @@
+@use 'base' as *;
+
+.main-login {
+  @include flex-between();
+  width: 80%;
+  margin: 5rem auto;
+
+  h1 {
+    font-family: $titels;
+    color: $secondary-color;
+  }
+
+  p {
+    padding: 2rem 0;
+  }
+
+  .aanmelden {
+    width: 50%;
+
+  }
+  #wachtwoord-vergeten{
+    text-decoration: none;
+    font-size: 11pt;
+  }
+  .registreren {
+    width: 50%;
+  }
+
+  input, select {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: verdana, sans-serif;
+  box-sizing: border-box;
+  color: #212121;
+}
+
+nav {
+  background-color: #eef1e8;
+}
+nav .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+nav .navbar .logo {
+  font-family: elephant, serif;
+  color: #5f9674;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 20pt;
+}
+nav .navbar .logo img {
+  height: 2rem;
+  width: fit-content;
+  margin-right: 1rem;
+}
+nav .navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20%;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+nav .navbar ul li {
+  list-style-type: none;
+  padding: 1rem;
+}
+nav .navbar ul li a {
+  text-decoration: none;
+  color: #5f9674;
+  font-weight: 600;
+}
+nav .navbar ul li a:hover {
+  color: #085209;
+}
+nav .navbar ul li a img {
+  height: 2rem;
+  width: fit-content;
+}
+
+footer {
+  background-color: #eef1e8;
+}
+footer .footer-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+footer .footer-box h2 {
+  font-family: elephant, serif;
+  font-size: 18pt;
+  padding: 1rem 0;
+  color: #5f9674;
+}
+footer .footer-box p {
+  padding: 0.5rem 0;
+}
+footer .footer-box p a {
+  text-decoration: none;
+  color: inherit;
+}
+footer .footer-box p a:hover {
+  color: #085209;
+  font-weight: 600;
+}
+
+.card {
+  width: 10rem;
+  margin: 0 2rem;
+}
+.card img {
+  height: fit-content;
+  width: 100%;
+}
+.card h2 {
+  font-size: 12pt;
+  padding: 0.5rem 0;
+  height: 3rem;
+}
+.card p {
+  padding: 0.5rem 0;
+}
+.card .pricetag {
+  text-align: end;
+  color: #085209;
+  font-weight: 800;
+}
+
+.button {
+  background-color: #ffb834;
+  border-radius: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  color: #085209;
+  font-weight: 600;
+}
+
+.rounded {
+  border-radius: 1rem;
+  border: 1px solid #085209;
+  padding: 0.5rem;
+}
+
+header .header {
+  height: 30rem;
+  width: 100%;
+  background-image: url("/assets/header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .header h1 {
+  width: 50%;
+  font-family: elephant, serif;
+  padding: 15rem 0 0 2rem;
+  color: #5f9674;
+  text-align: left;
+  font-size: 50pt;
+}
+
+.main-home {
+  margin: 5rem 0;
+}
+.main-home h1 {
+  text-align: center;
+  font-family: elephant, serif;
+  font-size: 25pt;
+  color: #085209;
+  padding-bottom: 2rem;
+}
+.main-home .favorieten {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+.main-home .favorieten a {
+  color: #212121;
+  text-decoration: none;
+}
+.main-home .favorieten .last-card h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.main-planten {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 5rem auto;
+}
+.main-planten .filter {
+  width: 30%;
+  height: 20rem;
+  background-color: #eef1e8;
+  border-radius: 1rem;
+  margin: 0 2rem;
+  padding: 2rem;
+}
+.main-planten .filter h2 {
+  font-family: elephant, serif;
+  color: #085209;
+}
+.main-planten .filter h3 {
+  padding: 0.5rem 0;
+}
+.main-planten .onze-planten {
+  width: 70%;
+}
+.main-planten .onze-planten h1 {
+  font-family: elephant, serif;
+  color: #5f9674;
+  margin-bottom: 1rem;
+}
+.main-planten .onze-planten p {
+  margin-bottom: 1rem;
+}
+.main-planten .onze-planten .onze-planten-lijst {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main-planten .onze-planten .onze-planten-lijst a {
+  text-decoration: none;
+  color: inherit;
+}
+.main-planten .onze-planten .paginanummers {
+  width: 40%;
+  margin: 2rem auto 0 auto;
+}
+.main-planten .onze-planten .paginanummers ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-planten .onze-planten .paginanummers ul li {
+  list-style-type: none;
+  padding: 0.3rem 0;
+  width: 2rem;
+  text-align: center;
+  border: 1px solid #212121;
+}
+.main-planten .onze-planten .paginanummers ul li:hover {
+  border: 2px solid #085209;
+}
+.main-planten .onze-planten .paginanummers ul li a:hover {
+  color: #085209;
+  font-weight: 600;
+}
+
+.main-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 5rem auto;
+}
+.main-login h1 {
+  font-family: elephant, serif;
+  color: #085209;
+}
+.main-login p {
+  padding: 2rem 0;
+}
+.main-login .aanmelden {
+  width: 50%;
+}
+.main-login .registreren {
+  width: 50%;
+}
+.main-login input, .main-login select {
+  margin-bottom: 1rem;
+}
+
+.main-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 5rem auto;
+}
+.main-item .item-picture {
+  width: 40%;
+}
+.main-item .item-picture img {
+  width: 90%;
+  height: fit-content;
+  margin: 0 auto;
+}
+.main-item .item-info {
+  width: 60%;
+}
+.main-item .item-info h1 {
+  font-family: elephant, serif;
+  color: #5f9674;
+  margin-bottom: 2rem;
+}
+.main-item .item-info p {
+  margin-bottom: 1rem;
+}
+.main-item .item-info .toevoegen {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-top: 5rem;
+}
+.main-item .item-info .toevoegen input {
+  height: min-content;
+  margin-right: 1rem;
+}
+.main-item .item-info .toevoegen button {
+  font-size: 20pt;
+  color: #085209;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.main-item .item-info .toevoegen button img {
+  height: 2rem;
+  width: fit-content;
+}
+.main-item .item-info .toevoegen .button-winkelmand-text {
+  font-size: 11pt;
+  color: #085209;
+  margin-left: 1rem;
+}
+.main-item .item-info .meer-info {
+  margin-top: 2rem;
+  width: 30%;
+}
+.main-item .item-info .meer-info img {
+  height: 1rem;
+  width: fit-content;
+  margin-right: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
