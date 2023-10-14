@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<nav>
+    <div class="navbar">
+        <a href="index.html" class="logo">
+            <img src="./assets/logo.png" alt="logo">
+            Empty Corner Store
+        </a>
+        <ul>
+            <li><a href="producten.html">Planten</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="#"><img src="assets/winkelmand.png" alt="winkelmand"></a></li>
+        </ul>
+    </div>
+</nav>
+<main class="main-login">
+    <div class="aanmelden">
+        <h1>Log in</h1>
+        <p>Meld je aan om de plant te vinden die echt bij je past.</p>
+        <form>
+            <label for="mailadres">e-mail</label><br/>
+            <input class="rounded" type="email" id="mailadres" name="email" required><br/>
+            <label for="password">Wachtwoord</label><br/>
+            <input class="rounded" type="password" id="password" name="wachtwoord" required><br/>
+            <input type="submit" value="Aanmelden" class="button">
+            <a id="wachtwoord-vergeten" href="#" style="margin-left: 2rem">Wachtwoord vergeten?</a>
+        </form>
+    </div>
+    <div class="registreren">
+        <h1>Nog geen account?</h1>
+        <p>Maak er nu een aan en geniet van een persoonlijke ervaring.</p>
+        <form>
+            <label for="vnaam">Voornaam</label><br/>
+            <input class="rounded" type="text" id="vnaam" name="vnaam" required><br/>
+            <label for="naam">Naam</label><br/>
+            <input class="rounded" type="text" id="naam" name="naam" required><br/>
+            <label for="geslacht">Geslacht</label>
+            <select class="rounded" name="geslacht" id="geslacht">
+                <option value="X" selected>X</option>
+                <option value="V">Vrouw</option>
+                <option value="M">Man</option>
+            </select><br/>
+            <label for="email">e-mailadress</label><br/>
+            <input class="rounded" type="email" id="email" name="email"><br/>
+            <label for="wachtwoord">Wachtwooord</label><br/>
+            <input class="rounded" type="password" id="wachtwoord" name="wachtwoord"><br/>
+            <input type="checkbox" id="privacy" name="privacy">
+            <label for="privacy">Ik ga akkoord met het privacy-beleid en de algemene voorwaarden.</label>
+            <input type="submit" value="Maak een account" class="button" required>
+        </form>
+    </div>
+</main>
+<footer>
+    <div class="footer-box">
+        <div class="footer-sec-1">
+            <h2>Empty corner store</h2>
+            <p><a href="producten.html">Planten</a></p>
+            <p><a href="login.html">Log in</a></p>
+        </div>
+        <div class="footer-sec-2">
+            <h2>Adres</h2>
+            <p>Straatnaam 001<br/>1010 Gemeente<br/>België</p>
+            <h2>Contact</h2>
+            <p><a href="mailto:info@emptycornerstore.com">info@emptycornerstore.com</a></p>
+            <p><a href="tel:0475892864">+32 401 23 45 67</a></p>
+        </div>
+        <div class="footer-sec-3">
+            <h2>Wij zijn open op...</h2>
+            <p>dinsdag-donderdag: 10u-18u</p>
+            <p>vrijdag-zaterdag: 10u-20u</p>
+            <p>zondag-maandag: gesloten</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

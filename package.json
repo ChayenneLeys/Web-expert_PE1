@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "sass": "^1.68.0"
+  },
+  "name": "webshop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "sass --watch scss/style.scss:css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

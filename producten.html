@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Producten</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav>
+    <div class="navbar">
+        <a href="index.html" class="logo">
+            <img src="./assets/logo.png" alt="logo">
+            Empty Corner Store
+        </a>
+        <ul>
+            <li><a href="producten.html">Planten</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="#"><img src="assets/winkelmand.png" alt="winkelmand"></a></li>
+        </ul>
+    </div>
+</nav>
+<main class="main-planten">
+    <div class="filter">
+        <h2>Filter</h2>
+        <h3>Standplaats</h3>
+        <input type="checkbox" id="volle-zon" name="volle-zon">
+        <label for="volle-zon">Volle zon</label><br/>
+        <input type="checkbox" id="daglicht" name="daglicht">
+        <label for="daglicht">Normaal daglicht</label><br/>
+        <input type="checkbox" id="half-schaduw" name="half-schaduw">
+        <label for="half-schaduw">Half schaduw</label><br/>
+        <input type="checkbox" id="schaduw" name="schaduw">
+        <label for="schaduw">Schaduw</label><br/>
+        <h3>Waterbehoefte</h3>
+        <input type="checkbox" id="veel" name="veel">
+        <label for="veel">Veel</label><br/>
+        <input type="checkbox" id="gemiddeld" name="gemiddeld">
+        <label for="gemiddeld">Gemiddeld</label><br/>
+        <input type="checkbox" id="weinig" name="weinig">
+        <label for="weinig">Weinig</label><br/>
+    </div>
+    <div class="onze-planten">
+        <h1>Onze planten</h1>
+        <p>Kamerplanten zijn niet alleen een leuke en groene toevoeging aan je interieur, maar hebben ook nog eens mooie
+            eigenschappen. Zo helpen deze planten om de lucht in huis te zuiveren, de luchtvochtigheid te verhogen en
+            dragen ze bij aan het verlagen van stress. </p>
+        <div class="onze-planten-lijst">
+            <a href="item.html">
+                <div class="card card-1">
+                    <img src="assets/pannekoekenplant.png" alt="pannekoekenplant">
+                    <h2>Pilea Peperomioides</h2>
+                    <p>Pannekoekenplant</p>
+                    <p class="pricetag">€7,50</p>
+                </div>
+            </a>
+            <a href="item.html">
+                <div class="card card-2">
+                    <img src="assets/vaderplant.png" alt="vaderplant">
+                    <h2>Tradescantia Nanouk</h2>
+                    <p>Vaderplant</p>
+                    <p class="pricetag">€8,50</p>
+                </div>
+            </a>
+            <a href="item.html">
+                <div class="card card-3">
+                    <img src="assets/bananenplant.png" alt="bananenplant">
+                    <h2>Musa Tropicana</h2>
+                    <p>Bananenplant</p>
+                    <p class="pricetag">€10,50</p>
+                </div>
+            </a>
+            <a href="item.html">
+                <div class="card card-4">
+                    <img src="assets/graslelie.png" alt="graslelie">
+                    <h2>Chlorophytum Comosum</h2>
+                    <p>Graslelie</p>
+                    <p class="pricetag">€7,50</p>
+                </div>
+            </a>
+            <a href="item.html">
+                <div class="card card-5">
+                    <img src="assets/koffieplant.png" alt="koffieplant">
+                    <h2>Coffea Arabica</h2>
+                    <p>Koffieplant</p>
+                    <p class="pricetag">€10,50</p>
+                </div>
+            </a>
+            <a href="item.html">
+                <div class="card card-6">
+                    <img src="assets/geldboom.png" alt="Geldboom">
+                    <h2>Pachira Aquatica</h2>
+                    <p>Geldboom</p>
+                    <p class="pricetag">€9,50</p>
+                </div>
+            </a>
+            <a href="item.html">
+                <div class="card card-7">
+                    <img src="assets/monkey-mask.png" alt="Monkey mask">
+                    <h2>Monstera Adansonii</h2>
+                    <p>Monkey mask</p>
+                    <p class="pricetag">€7,50</p>
+                </div>
+            </a>
+        </div>
+        <div class="paginanummers">
+            <ul class="flex-between">
+                <li><a><</a></li>
+                <li><a>1</a></li>
+                <li><a>2</a></li>
+                <li><a>3</a></li>
+                <li><a>...</a></li>
+                <li><a>></a></li>
+            </ul>
+
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-box">
+        <div class="footer-sec-1">
+            <h2>Empty corner store</h2>
+            <p><a href="producten.html">Planten</a></p>
+            <p><a href="login.html">Log in</a></p>
+        </div>
+        <div class="footer-sec-2">
+            <h2>Adres</h2>
+            <p>Straatnaam 001<br/>1010 Gemeente<br/>België</p>
+            <h2>Contact</h2>
+            <p><a href="mailto:info@emptycornerstore.com">info@emptycornerstore.com</a></p>
+            <p><a href="tel:0475892864">+32 401 23 45 67</a></p>
+        </div>
+        <div class="footer-sec-3">
+            <h2>Wij zijn open op...</h2>
+            <p>dinsdag-donderdag: 10u-18u</p>
+            <p>vrijdag-zaterdag: 10u-20u</p>
+            <p>zondag-maandag: gesloten</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
