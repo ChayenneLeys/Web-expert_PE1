@@ -35,10 +35,12 @@
     p {
       margin-bottom: 1rem;
     }
-    .onze-planten-lijst{
+
+    .onze-planten-lijst {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
 
       a {
         text-decoration: none;
@@ -52,6 +54,7 @@
 
       ul {
         @include flex-between();
+
         li {
           list-style-type: none;
           padding: 0.3rem 0;
@@ -70,5 +73,30 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-planten {
+    flex-direction: column;
+
+    .filter {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .onze-planten {
+      width: 100%;
+
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-planten {
+    width: 95%;
   }
 }

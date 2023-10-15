@@ -17,13 +17,15 @@ nav .navbar {
   margin: 0 auto;
 }
 nav .navbar .logo {
-  font-family: elephant, serif;
-  color: #5f9674;
   text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
+}
+nav .navbar .logo #navbar-logo {
+  font-family: elephant, serif;
+  color: #5f9674;
   font-size: 20pt;
 }
 nav .navbar .logo img {
@@ -35,7 +37,6 @@ nav .navbar ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 20%;
   margin: 0 auto;
   text-align: center;
   align-items: center;
@@ -123,6 +124,22 @@ footer .footer-box p a:hover {
   padding: 0.5rem;
 }
 
+@media screen and (max-width: 1000px) {
+  footer .footer-box {
+    flex-direction: column;
+  }
+  footer .footer-box .footer-sec-1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav #navbar-logo {
+    display: none;
+  }
+  nav .navbar ul {
+    width: 80%;
+  }
+}
 header .header {
   height: 30rem;
   width: 100%;
@@ -156,6 +173,7 @@ header .header h1 {
   justify-content: space-between;
   width: 70%;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 .main-home .favorieten a {
   color: #212121;
@@ -166,6 +184,26 @@ header .header h1 {
   margin-top: 2rem;
 }
 
+@media screen and (max-width: 1000px) {
+  header .header h1 {
+    font-size: 30pt;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .header {
+    height: 20rem;
+  }
+  header .header h1 {
+    font-size: 20pt;
+  }
+  .main-home h1 {
+    font-size: 18pt;
+  }
+  .main-home .favorieten {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
 .main-planten {
   display: flex;
   flex-direction: row;
@@ -203,6 +241,7 @@ header .header h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .main-planten .onze-planten .onze-planten-lijst a {
   text-decoration: none;
@@ -232,6 +271,26 @@ header .header h1 {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1000px) {
+  .main-planten {
+    flex-direction: column;
+  }
+  .main-planten .filter {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .main-planten .onze-planten {
+    width: 100%;
+  }
+  .main-planten .onze-planten h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-planten {
+    width: 95%;
+  }
+}
 .main-login {
   display: flex;
   flex-direction: row;
@@ -249,13 +308,45 @@ header .header h1 {
 .main-login .aanmelden {
   width: 50%;
 }
+.main-login #wachtwoord-vergeten {
+  text-decoration: none;
+  font-size: 11pt;
+  color: #085209;
+}
+.main-login #wachtwoord-vergeten:hover {
+  font-weight: 600;
+}
 .main-login .registreren {
   width: 50%;
+}
+.main-login .registreren #maak-account {
+  margin-top: 2rem;
 }
 .main-login input, .main-login select {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .main-login {
+    flex-direction: column;
+    width: 95%;
+    margin: 2rem auto;
+  }
+  .main-login .aanmelden {
+    width: 95%;
+    margin: 0 auto 5rem auto;
+  }
+  .main-login .aanmelden h1 {
+    text-align: center;
+  }
+  .main-login .registreren {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .main-login .registreren h1 {
+    text-align: center;
+  }
+}
 .main-item {
   display: flex;
   flex-direction: row;
@@ -281,6 +372,15 @@ header .header h1 {
 }
 .main-item .item-info p {
   margin-bottom: 1rem;
+}
+.main-item .item-info .meer-info {
+  margin-top: 2rem;
+  width: 30%;
+}
+.main-item .item-info .meer-info img {
+  height: 1rem;
+  width: fit-content;
+  margin-right: 1rem;
 }
 .main-item .item-info .toevoegen {
   display: flex;
@@ -309,14 +409,28 @@ header .header h1 {
   color: #085209;
   margin-left: 1rem;
 }
-.main-item .item-info .meer-info {
-  margin-top: 2rem;
-  width: 30%;
-}
-.main-item .item-info .meer-info img {
-  height: 1rem;
-  width: fit-content;
-  margin-right: 1rem;
+
+@media screen and (max-width: 1000px) {
+  .main-item {
+    flex-direction: column;
+    width: 95%;
+    margin: 2rem auto;
+  }
+  .main-item .item-picture {
+    width: 100%;
+  }
+  .main-item .item-info {
+    width: 100%;
+  }
+  .main-item .item-info h1 {
+    text-align: center;
+  }
+  .main-item .item-info .meer-info {
+    width: 100%;
+  }
+  .main-item .item-info .toevoegen {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

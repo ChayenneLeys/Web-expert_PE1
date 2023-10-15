@@ -31,14 +31,17 @@ nav {
     margin: 0 auto;
 
     .logo {
-      font-family: $titels;
-      color: $primary-color;
       text-decoration: none;
       display: flex;
       flex-direction: row;
       align-items: center;
       margin: 0 auto;
-      font-size: 20pt;
+
+      #navbar-logo {
+        font-family: $titels;
+        color: $primary-color;
+        font-size: 20pt;
+      }
 
       img {
         height: 2rem;
@@ -49,7 +52,6 @@ nav {
 
     ul {
       @include flex-between();
-      width: 20%;
       margin: 0 auto;
       text-align: center;
       align-items: center;
@@ -67,7 +69,7 @@ nav {
             color: $secondary-color;
           }
 
-          img{
+          img {
             height: 2rem;
             width: fit-content;
           }
@@ -137,7 +139,7 @@ footer {
   }
 }
 
-.button{
+.button {
   background-color: $tertiary-color;
   border-radius: 1rem;
   padding: 0.7rem 1.5rem;
@@ -146,8 +148,34 @@ footer {
   font-weight: 600;
 }
 
-.rounded{
+.rounded {
   border-radius: 1rem;
   border: 1px solid $secondary-color;
   padding: 0.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    .footer-box {
+      flex-direction: column;
+
+      .footer-sec-1 {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    #navbar-logo {
+      display: none;
+    }
+
+    .navbar {
+      ul {
+        width: 80%;
+      }
+    }
+  }
 }

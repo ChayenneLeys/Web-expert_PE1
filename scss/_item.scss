@@ -28,6 +28,17 @@
       margin-bottom: 1rem;
     }
 
+    .meer-info {
+      margin-top: 2rem;
+      width: 30%;
+
+      img {
+        height: 1rem;
+        width: fit-content;
+        margin-right: 1rem;
+      }
+    }
+
     .toevoegen {
       display: flex;
       flex-direction: row;
@@ -59,18 +70,33 @@
         margin-left: 1rem;
       }
     }
+  }
+}
 
-    .meer-info {
-      margin-top: 2rem;
-      width: 30%;
+@media screen and (max-width: 1000px) {
+  .main-item {
+    flex-direction: column;
+    width: 95%;
+    margin: 2rem auto;
 
-      img {
-        height: 1rem;
-        width: fit-content;
-        margin-right: 1rem;
-      }
+    .item-picture {
+      width: 100%;
     }
 
+    .item-info {
+      width: 100%;
+
+      h1 {
+        text-align: center;
+      }
+
+      .meer-info {
+        width: 100%;
+      }
+      .toevoegen{
+        justify-content: center;
+      }
+    }
 
   }
 }
