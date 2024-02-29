@@ -1,0 +1,17 @@
+
+install scss
+ in terminal
+- npm init -y
+- npm i sass
+
+Om scss en css bestand gelijk te doen lopen:
+-> open package.json
+-> voeg een script toe bij de scripts
+( vb: "dev": "sass --watch scss/main.scss:css/main.css")
+-> in terminal: npm run dev
+
+
+
+//<script>
+//import producten from 'path naar json'
+// let p = json.parse(producten)
